@@ -2,6 +2,9 @@ name = "company-hub"
 compatibility_date = "2026-07-01"
 pages_build_output_dir = "."
 
+[env.production]
+vars = { ADMIN_PASSWORD = "55" }
+
 [[d1_databases]]
 binding = "DB"
 database_name = "company-hub-db"
