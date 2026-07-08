@@ -4,7 +4,7 @@ export async function onRequestPost({ request, env }) {
   const body = await request.json().catch(() => ({}));
   const { password } = body;
 
-  if (!password || password !== env.ADMIN_PASSWORD) {
+  if (!password || password !== env.55) {
     return json({ error: "Incorrect password." }, 401);
   }
 
