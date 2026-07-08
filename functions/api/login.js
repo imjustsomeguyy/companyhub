@@ -1,13 +1,6 @@
 import { makeSessionCookie, json } from "./_lib/auth.js";
 
-export async function onRequestPost({ request, env }) {
-  const body = await request.json().catch(() => ({}));
-  const { password } = body;
-
-  if (!password || password !== "55") {
-    return json({ error: "Incorrect password." }, 401);
-  }
-
+export async function onRequestPost({ env }) {
   const cookie = await makeSessionCookie(env);
 
   return new Response(JSON.stringify({ ok: true }), {
