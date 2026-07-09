@@ -4,7 +4,7 @@ compatibility_date = "2026-07-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "company-hub-db"
-database_id = "d00382b6-6077-47fb-ac97-94a1fb3aafe0"
+database_id = "REPLACE_WITH_YOUR_DATABASE_ID"
 
 [[r2_buckets]]
 binding = "BUCKET"
